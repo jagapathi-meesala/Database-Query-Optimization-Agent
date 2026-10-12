@@ -1,0 +1,16 @@
+name: analyze-sql-query
+description: Inspect SQL text for common performance risks using offline heuristics.
+input_schema:
+  type: object
+  properties:
+    sql:
+      type: string
+      description: SQL query text; redact secrets and personal data.
+    engine:
+      type: string
+      description: Database engine and version, if known.
+    schema_context:
+      type: string
+      description: Relevant schema, indexes, or plan excerpts.
+  required:
+    - sql

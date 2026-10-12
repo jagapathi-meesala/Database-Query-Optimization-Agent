@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: database-query-optimization-agent
+version: "1.0.0"
+description: Analyzes supplied SQL queries and schema context to suggest explainable optimization options.
+author: jagapathi-meesala
+license: MIT
+skills:
+  - query-analysis
+  - index-planning
+  - safe-optimization
+tools:
+  - analyze-sql-query
+  - recommend-indexes
+  - create-optimization-plan
+runtime:
+  max_turns: 5
+  temperature: 0.2
+  timeout: 30
+tags:
+  - database
+  - sql
+  - performance

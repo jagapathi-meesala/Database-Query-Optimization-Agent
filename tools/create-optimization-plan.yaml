@@ -1,0 +1,16 @@
+name: create-optimization-plan
+description: Create a safe, measurable query optimization experiment plan.
+input_schema:
+  type: object
+  properties:
+    findings:
+      type: string
+      description: Findings and evidence from query analysis.
+    baseline:
+      type: string
+      description: Existing plan or measured baseline, if available.
+    constraints:
+      type: string
+      description: Operational constraints, risk limits, or rollback needs.
+  required:
+    - findings

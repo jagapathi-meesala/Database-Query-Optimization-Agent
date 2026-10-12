@@ -1,0 +1,15 @@
+name: recommend-indexes
+description: Suggest candidate index columns from user-supplied query context.
+input_schema:
+  type: object
+  properties:
+    columns:
+      type: array
+      items:
+        type: string
+      description: Relevant filter, join, or ordering columns.
+    reason:
+      type: string
+      description: Why these columns may matter.
+  required:
+    - columns
